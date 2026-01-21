@@ -11,16 +11,8 @@ Features
 
 1. Download zip files which contains necessary files<br>
 [Download - Add Kanji writer v3.0](https://raw.githubusercontent.com/smileytechie/Write-Kanji/master/Add%20to%20Existing%20Deck%20(Kanji)/Add.Kanji.writer.to.existing.deck.version.3.0.zip)<br>
-```
-_hanzi_writer_style.css
-_hanzi_writer_xiehanzi_kanji.js
-_Material-Icons.woff2
-```
 <br>
-[Download - Character stroke data](https://raw.githubusercontent.com/smileytechie/Write-Kanji/master/Add%20to%20Existing%20Deck%20(Kanji)/Character%20stroke%20data.zip)<br>
-```
-All files in the character stroke data folder
-```
+[Download - Character stroke data](https://raw.githubusercontent.com/smileytechie/Write-Kanji/master/Add%20to%20Existing%20Deck%20(Kanji)/Character%20stroke%20data.zip)
 
 2. Extract zip file and copy all files to `Anki/User 1/collection.media` folder. Anki does not support subfolders in the collections.media folder, so make sure you put the character stroke data files directly in the collections.media folder.
 
