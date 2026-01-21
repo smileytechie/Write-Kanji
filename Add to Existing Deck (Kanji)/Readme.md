@@ -6,20 +6,23 @@ Features
 - Character and grid height
 - Show and hide outline
 - Show stroke with animation
-- Skip to next character
 
 # Add to existing deck with Kanji
 
 1. Download zip files which contains necessary files<br>
-[Download - Add Kanji writer v2.1](https://raw.githubusercontent.com/krmanik/Write-Kanji/master/Add%20to%20Existing%20Deck%20(Kanji)/Add.Kanji.writer.to.existing.deck.version.2.1.zip)
-
+[Download - Add Kanji writer v3.0](https://raw.githubusercontent.com/smileytechie/Write-Kanji/master/Add%20to%20Existing%20Deck%20(Kanji)/Add.Kanji.writer.to.existing.deck.version.3.0.zip)<br>
 ```
 _hanzi_writer_style.css
 _hanzi_writer_xiehanzi_kanji.js
 _Material-Icons.woff2
 ```
+<br>
+[Download - Character stroke data](https://raw.githubusercontent.com/smileytechie/Write-Kanji/master/Add%20to%20Existing%20Deck%20(Kanji)/Character%20stroke%20data.zip)<br>
+```
+All files in the character stroke data folder
+```
 
-2. Extract zip file and copy all three files to `Anki/User 1/collection.media` folder
+2. Extract zip file and copy all files to `Anki/User 1/collection.media` folder. Anki does not support subfolders in the collections.media folder, so make sure you put the character stroke data files directly in the collections.media folder.
 
 3. Open card template editor or note editor for current deck and add the following to back or front side of card template.
 
@@ -32,13 +35,13 @@ _Material-Icons.woff2
 <div id="character-target-div"></div>
 <div id="bottom-Button"></div>
 
+<script src="{{Expression}}.js" type="text/javascript"></script>
+
 <script>
+    var data = JSON.stringify(char_data); // character stroke data from the .js loaded above
     var show_outline = true;     // default show outline, put false for hiding
     var charHW = 70;             // default grid size on screen on scale of 0-100
     var strokeWidth = 10;        // default brush size
-
-    var url_hanzi = "https://cdn.jsdelivr.net/npm/kanji-writer-data-jp@latest/";
-    // var url_hanzi = "http://127.0.0.1:8080/data/";
 </script>
 
 
@@ -67,3 +70,4 @@ _Material-Icons.woff2
 ```css
 @import "_hanzi_writer_style.css";
 ```
+
